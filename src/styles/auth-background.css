@@ -1,0 +1,54 @@
+/* Global auth background with 3D flower garden */
+
+.auth-bg{
+  min-height: 100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 24px 16px;
+
+  /* 🌸 REPLACE URL with your own flower image */
+  background-image: url("/images/flower-garden-3d.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+/* Dark overlay for readability */
+.auth-bg::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(
+    180deg,
+    rgba(8,6,15,.65),
+    rgba(8,6,15,.75)
+  );
+  z-index: 0;
+}
+
+/* ensure card is above overlay */
+.auth-bg > *{
+  position: relative;
+  z-index: 1;
+}
+
+.login-card::after,
+.forgot-card::after,
+.register-card::after{
+  content:"";
+  position:absolute;
+  inset:-1px;
+  border-radius: inherit;
+  background: linear-gradient(
+    120deg,
+    rgba(255,79,216,.35),
+    rgba(34,255,214,.35),
+    rgba(124,92,255,.35)
+  );
+  filter: blur(18px);
+  opacity:.25;
+  z-index:-1;
+}

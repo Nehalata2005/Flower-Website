@@ -1,0 +1,36 @@
+:root{
+  font-family: 'Lato', sans-serif;
+
+  --bg1:#003a3c;   /* top teal */
+  --bg2:#002b2d;   /* mid teal */
+  --bg3:#001f22;   /* bottom deep */
+
+  --gold:#f6c21a;
+  --gold2:#e9b110;
+
+  --label:#c9cf4a; /* yellow-green labels */
+  --text:#dfeeed;  /* soft white text */
+
+  color-scheme: dark;
+  color: var(--text);
+
+  background: linear-gradient(
+    180deg,
+    var(--bg1) 0%,
+    var(--bg2) 45%,
+    var(--bg3) 100%
+  );
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body{
+  height:100%;
+}
+
+body{
+  margin:0;
+}
+
