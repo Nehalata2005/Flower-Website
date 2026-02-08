@@ -8,7 +8,7 @@ import { AuthContext } from "../context/AuthContext";
 export default function Profile() {
   const nav = useNavigate();
   const { logout } = useContext(AuthContext);
-  const API_BASE = "https://apifinal.technorapide.in";
+  const API_BASE = "https://apiflower.technorapide.in";
   const token = localStorage.getItem("token");
 
   const [loading, setLoading] = useState(true);

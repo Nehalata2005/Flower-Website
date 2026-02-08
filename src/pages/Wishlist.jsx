@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Wishlist() {
   const nav = useNavigate();
-  const API_BASE = "https://apifinal.technorapide.in";
+  const API_BASE = "https://apiflower.technorapide.in";
 
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);

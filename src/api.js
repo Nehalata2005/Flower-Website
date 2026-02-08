@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://apifinal.technorapide.in/api/auth', // proxied to backend in dev via Vite
+  baseURL: 'https://apiflower.technorapide.in/api/auth', // proxied to backend in dev via Vite
   headers: { 'Content-Type': 'application/json' }
 });
 

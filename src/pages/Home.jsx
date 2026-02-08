@@ -6,7 +6,7 @@ import toast from "react-hot-toast";
 
 export default function Home() {
   const nav = useNavigate();
-  const API_BASE = "https://apifinal.technorapide.in";
+  const API_BASE = "https://apiflower.technorapide.in";
 
   const [activeCatId, setActiveCatId] = useState("ALL");
   const [categories, setCategories] = useState([]);

@@ -8,7 +8,7 @@ import loadRazorpay from "../utils/loadRazorpay";
 export default function Cart() {
   const nav = useNavigate();
 
-  const API_BASE = import.meta?.env?.VITE_API_BASE || "https://apifinal.technorapide.in";
+  const API_BASE = import.meta?.env?.VITE_API_BASE || "https://apiflower.technorapide.in";
 
   const [cart, setCart] = useState({ items: [], totalPrice: 0 });
   const [loading, setLoading] = useState(true);
